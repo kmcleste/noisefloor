@@ -26,6 +26,11 @@ jobs:
     container:
       image: mcr.microsoft.com/playwright:v1.61.1-noble
     steps:
+      # The Playwright image doesn't ship `unzip`, which claude-code-action's
+      # Bun setup needs to extract the Bun release. Install it before the action.
+      - name: Install unzip (needed by claude-code-action's Bun setup)
+        run: apt-get update && apt-get install -y --no-install-recommends unzip
+
       - uses: actions/checkout@v4
 
       # Install the Playwright JS client into the repo's node_modules so the
