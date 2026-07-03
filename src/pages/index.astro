@@ -1,0 +1,39 @@
+---
+import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+const issues = (await getCollection("posts")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+
+const fmt = (d) =>
+  d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+---
+
+<Base title="AI Intel — weekly wire">
+  <header class="masthead">
+    <p class="kicker"><span class="dot"></span> On the wire · updated weekly</p>
+    <h1>AI Intel</h1>
+    <p class="standfirst">
+      A weekly read on what actually moved in AI — models, agent patterns,
+      provider news, open vs closed, and building it for the enterprise.
+      Curated by an agent, source-linked, no filler.
+    </p>
+  </header>
+
+  {issues.length === 0 ? (
+    <p class="issue-summary">No issues yet. The first run publishes here.</p>
+  ) : (
+    <ul class="issues">
+      {issues.map((issue) => (
+        <li class="issue-row">
+          <a href={`/posts/${issue.id}/`}>
+            <span class="issue-meta">{fmt(issue.data.date)} · {issue.data.beats.join(" / ")}</span>
+            <div class="issue-title">{issue.data.title}</div>
+            <p class="issue-summary">{issue.data.summary}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+</Base>
