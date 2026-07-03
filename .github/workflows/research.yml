@@ -27,6 +27,10 @@ jobs:
       - uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Surface the agent's real output/errors in the logs. The default hides
+          # them, so an API rejection (bad key, no model access) reads as a silent
+          # green run that commits nothing. Drop this once runs are healthy.
+          show_full_output: true
           prompt: >-
             Read CLAUDE.md and prompts/research.md, then produce this week's
             issue exactly as those files specify. Load data/manifest.json before
