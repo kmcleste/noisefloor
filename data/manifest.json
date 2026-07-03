@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-03T00:00:00Z",
+  "updated": "2026-07-03T12:00:00Z",
   "entries": [
     {
       "id": "claude-sonnet-5-launch",
@@ -52,6 +52,15 @@
       "title": "Apple AFM 3 Core Advanced runs a 20B sparse model entirely on-device",
       "beat": "vision",
       "urls": ["https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models"],
+      "first_covered": "2026-07-03",
+      "last_covered": "2026-07-03",
+      "times_covered": 1
+    },
+    {
+      "id": "fable-5-mythos-5-export-controls",
+      "title": "US government suspended Anthropic Fable 5 and Mythos 5 globally for 19 days under export controls",
+      "beat": "providers",
+      "urls": ["https://www.anthropic.com/news/fable-mythos-access"],
       "first_covered": "2026-07-03",
       "last_covered": "2026-07-03",
       "times_covered": 1
