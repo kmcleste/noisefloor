@@ -42,7 +42,9 @@ When in doubt, leave it out. A tight six-item issue beats a padded twelve.
 
 ## File conventions
 
-- One issue per run: `content/posts/YYYY-MM-DD-issue.md`.
+- One issue per run: `content/posts/YYYY-MM-DD-HHMM-issue.md` (UTC
+  minute-stamp, so running the job twice in a day doesn't overwrite — each run
+  is its own post). The `date:` frontmatter is the full UTC timestamp to match.
 - Frontmatter must validate against `src/content.config.ts` (title, date,
   summary, beats[], sources[]).
 - Update `data/manifest.json` after writing the issue — this is the dedup memory.
