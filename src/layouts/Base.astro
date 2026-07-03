@@ -1,0 +1,33 @@
+---
+import "../styles/global.css";
+const { title = "AI Intel", description = "A weekly intelligence wire on AI." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="alternate" type="application/rss+xml" title="AI Intel" href="/rss.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Space+Grotesk:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="topnav">
+        <a href="/">AI&nbsp;INTEL</a>
+        <a href="/rss.xml">RSS&nbsp;↗</a>
+      </nav>
+      <slot />
+      <footer class="footer">
+        Compiled weekly by an agent. Every claim is source-linked — verify before you cite.
+      </footer>
+    </div>
+  </body>
+</html>

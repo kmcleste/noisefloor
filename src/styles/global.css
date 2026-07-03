@@ -1,0 +1,166 @@
+/* ------------------------------------------------------------------ *
+ * AI Intel — an intelligence wire, not a blog.
+ * Grotesk headlines (machine), serif body (human analysis), mono meta.
+ * One accent: signal indigo. Signature: the beat rail down the left.
+ * ------------------------------------------------------------------ */
+
+:root {
+  --paper: #fbfaf7;
+  --ink: #17191f;
+  --slate: #6c7079;
+  --rule: #e6e3dc;
+  --accent: #23407a;
+  --accent-soft: #eaeef6;
+
+  --display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --body: "Newsreader", Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --measure: 66ch;
+  --gutter: clamp(1.25rem, 5vw, 3rem);
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 1.075rem;
+  line-height: 1.6;
+  font-optical-sizing: auto;
+}
+
+.wrap {
+  max-width: 78ch;
+  margin: 0 auto;
+  padding: 0 var(--gutter) 6rem;
+}
+
+/* --- masthead --------------------------------------------------------- */
+.masthead {
+  border-bottom: 2px solid var(--ink);
+  margin-bottom: 2.5rem;
+  padding: 2.5rem 0 1.25rem;
+}
+.kicker {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 0.75rem;
+}
+.kicker .dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--accent);
+}
+.masthead h1 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(2.1rem, 6vw, 3.1rem);
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  margin: 0;
+}
+.masthead .standfirst {
+  color: var(--slate);
+  max-width: var(--measure);
+  margin: 0.9rem 0 0;
+}
+
+/* --- issue index (home) ---------------------------------------------- */
+.issues { list-style: none; margin: 0; padding: 0; }
+.issue-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.4rem;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.issue-row a { text-decoration: none; color: inherit; }
+.issue-row a:hover .issue-title { color: var(--accent); }
+.issue-meta {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--slate);
+  text-transform: uppercase;
+}
+.issue-title {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: -0.015em;
+  transition: color 0.15s ease;
+}
+.issue-summary { color: var(--slate); max-width: var(--measure); }
+
+/* --- the beat rail: article body ------------------------------------- */
+.issue-body {
+  max-width: var(--measure);
+}
+.issue-body p { margin: 0 0 1.15rem; }
+.issue-body a {
+  color: var(--accent);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+/* each item heading gets a mono beat label riding a hairline wire */
+.issue-body h2 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.45rem;
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+  margin: 2.6rem 0 0.5rem;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--accent);
+}
+.beat {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 0.18rem 0.5rem;
+  border-radius: 2px;
+  margin-right: 0.5rem;
+  vertical-align: 0.12em;
+}
+
+/* --- footer / nav ---------------------------------------------------- */
+.topnav, .footer {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  color: var(--slate);
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.1rem 0;
+}
+.topnav a, .footer a { color: var(--slate); text-decoration: none; }
+.topnav a:hover, .footer a:hover { color: var(--accent); }
+.footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 3.5rem;
+  padding-top: 1.4rem;
+}
+.back { display: inline-block; margin-bottom: 1.5rem; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
