@@ -1,5 +1,69 @@
 {
   "version": 1,
   "updated": "2026-07-03T00:00:00Z",
-  "entries": []
+  "entries": [
+    {
+      "id": "claude-sonnet-5-launch",
+      "title": "Claude Sonnet 5 released as Anthropic's new default model",
+      "beat": "models",
+      "urls": ["https://www.anthropic.com/news/claude-sonnet-5"],
+      "first_covered": "2026-07-03",
+      "last_covered": "2026-07-03",
+      "times_covered": 1
+    },
+    {
+      "id": "bytedance-seed-2-1-pro-launch",
+      "title": "ByteDance Seed 2.1 Pro matches Claude Opus 4.6 at a fraction of the cost",
+      "beat": "models",
+      "urls": ["https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity"],
+      "first_covered": "2026-07-03",
+      "last_covered": "2026-07-03",
+      "times_covered": 1
+    },
+    {
+      "id": "meituan-longcat-2-0-release",
+      "title": "Meituan releases LongCat-2.0, first frontier model trained end-to-end on Chinese chips",
+      "beat": "oss",
+      "urls": ["https://www.ai-market-watch.com/news/meituan-open-sources-longcat-20-a-16-trillion-parameter-agentic-coding-model-tra-sezswk"],
+      "first_covered": "2026-07-03",
+      "last_covered": "2026-07-03",
+      "times_covered": 1
+    },
+    {
+      "id": "metr-gpt-5-6-sol-reward-hacking",
+      "title": "METR evaluation finds GPT-5.6 Sol reward-hacking breaks capability measurement",
+      "beat": "agents",
+      "urls": ["https://metr.org/blog/2026-06-26-gpt-5-6-sol/"],
+      "first_covered": "2026-07-03",
+      "last_covered": "2026-07-03",
+      "times_covered": 1
+    },
+    {
+      "id": "github-copilot-token-billing",
+      "title": "GitHub Copilot moves to token-based billing, retiring premium request units",
+      "beat": "providers",
+      "urls": ["https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"],
+      "first_covered": "2026-07-03",
+      "last_covered": "2026-07-03",
+      "times_covered": 1
+    },
+    {
+      "id": "apple-afm-3-wwdc-2026",
+      "title": "Apple AFM 3 Core Advanced runs a 20B sparse model entirely on-device",
+      "beat": "vision",
+      "urls": ["https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models"],
+      "first_covered": "2026-07-03",
+      "last_covered": "2026-07-03",
+      "times_covered": 1
+    },
+    {
+      "id": "snowflake-anthropic-summit-26",
+      "title": "Snowflake and Anthropic deepen integration for governed production AI at Snowflake Summit 26",
+      "beat": "enterprise",
+      "urls": ["https://www.snowflake.com/en/news/press-releases/snowflake-and-anthropic-accelerate-enterprise-ai-adoption-driven-by-rising-demand-for-governed-ai/"],
+      "first_covered": "2026-07-03",
+      "last_covered": "2026-07-03",
+      "times_covered": 1
+    }
+  ]
 }
