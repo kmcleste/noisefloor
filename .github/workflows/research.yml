@@ -18,8 +18,25 @@ concurrency:
 jobs:
   research:
     runs-on: ubuntu-latest
+    # Run the whole job inside Microsoft's official Playwright image, which ships
+    # Chromium + all its system libraries prebuilt. That's what lets the browser
+    # fetch fallback (scripts/fetch.mjs) work with zero per-run browser install.
+    # The image tag MUST match the playwright version installed below (the image
+    # ships Chromium at exactly that version) — bump both together.
+    container:
+      image: mcr.microsoft.com/playwright:v1.61.1-noble
     steps:
       - uses: actions/checkout@v4
+
+      # Install the Playwright JS client into the repo's node_modules so the
+      # ESM import in scripts/fetch.mjs resolves it. --no-save keeps it out of
+      # package.json, so a Vercel site build never pulls it (and never downloads
+      # Chromium). Browsers are already baked into the container, so the download
+      # is skipped — this is just a few seconds of JS.
+      - name: Install Playwright client
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
+        run: npm install --no-save playwright@1.61.1
 
       # The maker: Claude Code runs headless, does the research, writes the issue
       # markdown, and updates the dedup manifest. Tool surface is scoped tight so
@@ -38,7 +55,7 @@ jobs:
           claude_args: >-
             --model claude-sonnet-4-6
             --max-turns 40
-            --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(node scripts/score.mjs:*)"
+            --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(node scripts/score.mjs:*),Bash(node scripts/fetch.mjs:*)"
 
       # The plumbing: deterministic git, not the agent's job. Push to main is what
       # triggers the Vercel deploy (Vercel's Git integration handles the build).
