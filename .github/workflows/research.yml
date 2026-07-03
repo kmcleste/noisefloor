@@ -43,6 +43,11 @@ jobs:
       # The plumbing: deterministic git, not the agent's job. Push to main is what
       # triggers the Vercel deploy (Vercel's Git integration handles the build).
       - name: Commit & publish
+        env:
+          # claude-code-action strips the auth header actions/checkout installed,
+          # so a bare `git push` fails. Push to an explicitly authenticated URL
+          # with the built-in token (contents: write is granted above).
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name  "ai-intel-bot"
           git config user.email "ai-intel-bot@users.noreply.github.com"
@@ -51,5 +56,5 @@ jobs:
             echo "Nothing new this week — no commit."
           else
             git commit -m "intel: issue $(date -u +%F)"
-            git push
+            git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
           fi
