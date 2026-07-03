@@ -43,6 +43,14 @@ jobs:
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1"
         run: npm install --no-save playwright@1.61.1
 
+      # A per-run UTC minute-stamp. It names this run's issue file and sets the
+      # frontmatter date, so running the job more than once in a day produces
+      # distinct posts instead of overwriting a single YYYY-MM-DD file.
+      - name: Timestamp this run
+        run: |
+          echo "ISSUE_STAMP=$(date -u +%Y-%m-%d-%H%M)"    >> "$GITHUB_ENV"
+          echo "ISSUE_DATE=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
+
       # The maker: Claude Code runs headless, does the research, writes the issue
       # markdown, and updates the dedup manifest. Tool surface is scoped tight so
       # an unattended run can't touch anything outside content/ and data/.
@@ -56,7 +64,11 @@ jobs:
           prompt: >-
             Read CLAUDE.md and prompts/research.md, then produce this week's
             issue exactly as those files specify. Load data/manifest.json before
-            researching so you don't repeat recently-covered stories.
+            researching so you don't repeat recently-covered stories. Write this
+            run's issue to content/posts/${{ env.ISSUE_STAMP }}-issue.md and set
+            its frontmatter `date:` field to exactly ${{ env.ISSUE_DATE }} — this
+            per-run UTC timestamp is what keeps multiple runs in one day from
+            overwriting each other.
           claude_args: >-
             --model claude-sonnet-4-6
             --max-turns 40
@@ -81,6 +93,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nothing new this week — no commit."
           else
-            git commit -m "intel: issue $(date -u +%F)"
+            git commit -m "intel: issue ${ISSUE_STAMP}"
             git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main
           fi

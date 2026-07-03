@@ -73,15 +73,22 @@ see README — but a disciplined self-check is the baseline.)
 
 ## 6. Write the issue
 
-Create `content/posts/YYYY-MM-DD-issue.md` (today's UTC date). Frontmatter:
+Create the issue file at the exact path your run prompt gives you —
+`content/posts/YYYY-MM-DD-HHMM-issue.md`, a UTC minute-stamp so more than one
+run in a day produces distinct posts instead of overwriting a single file.
+Frontmatter:
 
     ---
     title: "AI Intel — Week of <Mon D, YYYY>"
-    date: <YYYY-MM-DD>
+    date: <the exact UTC timestamp from your run prompt, e.g. 2026-07-03T19:28:00Z>
     summary: "<one sentence: the through-line of the week>"
     beats: [models, agents, providers]   # only beats actually covered
     sources: ["https://…", "https://…"]  # every primary source used
     ---
+
+If your run prompt didn't supply a stamp (e.g. a local test), use the current
+UTC time yourself: filename `content/posts/<YYYY-MM-DD-HHMM>-issue.md`, and a
+full `date:` timestamp like `2026-07-03T19:28:00Z`.
 
 Body: a two-sentence editor's note, then one `##` section per item. Head each
 section with the beat label span so it styles correctly, e.g.:
