@@ -13,9 +13,21 @@ news.
 ## 2. Research the beats
 
 Use WebSearch / WebFetch to sweep the last ~7–10 days across all eight beats.
-Favor primary sources (vendor blogs, papers, release notes, official docs).
-For each promising story, note: a short title, the beat, the source URL(s) you
-fetched, the publish date, and a one-line "what's new."
+Favor primary sources (vendor blogs, papers, release notes, official docs) —
+they're both higher-signal and far more likely to fetch cleanly than
+aggregators. For each promising story, note: a short title, the beat, the
+source URL(s) you fetched, the publish date, and a one-line "what's new."
+
+If WebFetch fails on a page you need (typically 401/403 — a publisher blocking
+scripted requests), retry that one URL with the browser fallback:
+
+    node scripts/fetch.mjs https://example.com/the-article
+
+It renders the page in a real browser and prints the readable text. Use it only
+for pages that are genuinely public — it does not and will not get past
+paywalls, logins, or anti-bot challenges (it exits non-zero and says so). If the
+fallback is also blocked, rely on the WebSearch snippet or drop the claim.
+Never fabricate a detail you couldn't actually read from a source this run.
 
 Aim to surface ~12–20 raw candidates before filtering.
 
