@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-03T19:46:13Z",
+  "updated": "2026-07-04T03:11:44Z",
   "entries": [
     {
       "id": "claude-sonnet-5-launch",
@@ -58,12 +58,16 @@
     },
     {
       "id": "fable-5-mythos-5-export-controls",
-      "title": "US government suspended Anthropic Fable 5 and Mythos 5 globally for 19 days under export controls",
+      "title": "Anthropic redeploys Claude Fable 5 with a proposed cross-industry jailbreak severity scale",
       "beat": "providers",
-      "urls": ["https://www.anthropic.com/news/fable-mythos-access"],
+      "urls": [
+        "https://www.anthropic.com/news/fable-mythos-access",
+        "https://www.anthropic.com/news/redeploying-fable-5",
+        "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework"
+      ],
       "first_covered": "2026-07-03",
-      "last_covered": "2026-07-03",
-      "times_covered": 1
+      "last_covered": "2026-07-04",
+      "times_covered": 2
     },
     {
       "id": "snowflake-anthropic-summit-26",
@@ -129,6 +133,42 @@
       "urls": ["https://www.digitalapplied.com/blog/anthropic-alibaba-distillation-campaign-2026-ai-ip-war"],
       "first_covered": "2026-07-03",
       "last_covered": "2026-07-03",
+      "times_covered": 1
+    },
+    {
+      "id": "google-cloud-agent-platform-mcp-server",
+      "title": "Google Cloud ships governed remote MCP server for Gemini Enterprise Agent Platform",
+      "beat": "frameworks",
+      "urls": ["https://cloud.google.com/blog/products/ai-machine-learning/gemini-enterprise-agent-platform-remote-mcp-server/"],
+      "first_covered": "2026-07-04",
+      "last_covered": "2026-07-04",
+      "times_covered": 1
+    },
+    {
+      "id": "jamf-ai-governance-mac-ga",
+      "title": "Jamf launches native AI Governance for Mac fleets",
+      "beat": "enterprise",
+      "urls": ["https://www.jamf.com/blog/ai-governance-for-mac/"],
+      "first_covered": "2026-07-04",
+      "last_covered": "2026-07-04",
+      "times_covered": 1
+    },
+    {
+      "id": "alibaba-happyhorse-1-1-launch",
+      "title": "Alibaba releases HappyHorse 1.1 video generation model",
+      "beat": "vision",
+      "urls": ["https://www.alibabacloud.com/blog/happyhorse-gets-stronger-motion-expressiveness-higher-generation-consistency-and-enhanced-visual-quality_603293"],
+      "first_covered": "2026-07-04",
+      "last_covered": "2026-07-04",
+      "times_covered": 1
+    },
+    {
+      "id": "deepseek-v3-endpoint-retirement",
+      "title": "DeepSeek sets July 24 deadline to retire legacy V3-era API endpoints",
+      "beat": "providers",
+      "urls": ["https://api-docs.deepseek.com/news/news260424"],
+      "first_covered": "2026-07-04",
+      "last_covered": "2026-07-04",
       "times_covered": 1
     }
   ]
