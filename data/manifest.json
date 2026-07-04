@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-04T03:11:44Z",
+  "updated": "2026-07-04T14:36:15Z",
   "entries": [
     {
       "id": "claude-sonnet-5-launch",
@@ -167,6 +167,60 @@
       "title": "DeepSeek sets July 24 deadline to retire legacy V3-era API endpoints",
       "beat": "providers",
       "urls": ["https://api-docs.deepseek.com/news/news260424"],
+      "first_covered": "2026-07-04",
+      "last_covered": "2026-07-04",
+      "times_covered": 1
+    },
+    {
+      "id": "openai-government-equity-stake-proposal",
+      "title": "OpenAI proposes handing the US government a 5% equity stake worth $42.6B",
+      "beat": "providers",
+      "urls": ["https://www.euronews.com/next/2026/07/02/openai-offers-the-us-government-a-5-ownership-stake"],
+      "first_covered": "2026-07-04",
+      "last_covered": "2026-07-04",
+      "times_covered": 1
+    },
+    {
+      "id": "california-anthropic-poppy-state-deal",
+      "title": "California makes Claude the default assistant across state agencies at 50% off",
+      "beat": "enterprise",
+      "urls": ["https://www.gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership-providing-anthropic-tools-to-state-agencies-and-improving-services-for-californians/"],
+      "first_covered": "2026-07-04",
+      "last_covered": "2026-07-04",
+      "times_covered": 1
+    },
+    {
+      "id": "nvidia-ai-compute-partnership-revenue-share",
+      "title": "Nvidia launches revenue-sharing AI Compute Partnership with AI clouds",
+      "beat": "providers",
+      "urls": ["https://blogs.nvidia.com/blog/nvidia-unlocks-ai-compute-at-scale-capital-partners-to-power-ai-infrastructure-buildout/"],
+      "first_covered": "2026-07-04",
+      "last_covered": "2026-07-04",
+      "times_covered": 1
+    },
+    {
+      "id": "guardfall-shell-injection-coding-agents",
+      "title": "GuardFall shell-injection flaw defeats guards in 10 of 11 open-source coding agents",
+      "beat": "agents",
+      "urls": ["https://adversa.ai/blog/opensource-ai-coding-agents-shell-injection-vulnerability/"],
+      "first_covered": "2026-07-04",
+      "last_covered": "2026-07-04",
+      "times_covered": 1
+    },
+    {
+      "id": "sakana-fugu-ultra-orchestrator",
+      "title": "Sakana AI ships Fugu Ultra, a multi-agent orchestrator marketed as export-control-proof",
+      "beat": "agents",
+      "urls": ["https://sakana.ai/fugu-release/"],
+      "first_covered": "2026-07-04",
+      "last_covered": "2026-07-04",
+      "times_covered": 1
+    },
+    {
+      "id": "pinecone-nexus-public-preview",
+      "title": "Pinecone Nexus enters public preview, compiling enterprise knowledge ahead of retrieval",
+      "beat": "rag",
+      "urls": ["https://www.pinecone.io/blog/pinecone-nexus-public-preview/"],
       "first_covered": "2026-07-04",
       "last_covered": "2026-07-04",
       "times_covered": 1
