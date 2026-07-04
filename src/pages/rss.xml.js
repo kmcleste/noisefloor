@@ -7,7 +7,7 @@ export async function GET(context) {
   );
 
   return rss({
-    title: "AI Intel",
+    title: "NoiseFloor",
     description: "A weekly intelligence wire on AI.",
     site: context.site,
     items: issues.map((issue) => ({

@@ -1,6 +1,6 @@
 # Weekly run procedure
 
-You are producing one issue of the AI Intel briefing. Work through these phases
+You are producing one issue of the NoiseFloor briefing. Work through these phases
 in order. Read `CLAUDE.md` first for the beat taxonomy, signal bar, and
 attribution rules — they bind everything below.
 
@@ -79,12 +79,22 @@ run in a day produces distinct posts instead of overwriting a single file.
 Frontmatter:
 
     ---
-    title: "AI Intel — Week of <Mon D, YYYY>"
+    title: "<a specific headline for THIS issue — see below>"
     date: <the exact UTC timestamp from your run prompt, e.g. 2026-07-03T19:28:00Z>
     summary: "<one sentence: the through-line of the week>"
     beats: [models, agents, providers]   # only beats actually covered
     sources: ["https://…", "https://…"]  # every primary source used
     ---
+
+The **title is a headline, not a label** — write it fresh for this issue from
+the week's dominant thread (the same thread the summary elaborates). Aim for
+~40–70 characters, concrete and editorial. Don't prefix it with the brand
+("NoiseFloor" already lives in the site header), don't use "Week of …", and
+don't make it a topic list.
+
+- Good: `Washington froze a frontier model for 19 days, then reversed`
+- Good: `Three vendors race to fence in what agents can touch`
+- Bad:  `AI Intel — Week of Jun 30, 2026` · `Weekly AI news roundup`
 
 If your run prompt didn't supply a stamp (e.g. a local test), use the current
 UTC time yourself: filename `content/posts/<YYYY-MM-DD-HHMM>-issue.md`, and a
