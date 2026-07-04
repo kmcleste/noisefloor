@@ -1,4 +1,4 @@
-# AI Intel
+# NoiseFloor
 
 A weekly AI intelligence briefing that researches, curates, and publishes
 itself. A scheduled GitHub Action runs Claude Code headless; it sweeps the
@@ -25,7 +25,7 @@ src/                             Astro site (index, issue pages, RSS)
    (framework preset: Astro — zero config).
 5. Set `site` in `astro.config.mjs` to your Vercel URL so RSS/canonical links
    resolve.
-6. Trigger a run by hand: Actions tab → **Weekly AI Intel** → *Run workflow*.
+6. Trigger a run by hand: Actions tab → **Weekly NoiseFloor** → *Run workflow*.
    Delete the seed issue once a real one lands.
 
 Run the site locally with `npm run dev`.

@@ -1,4 +1,4 @@
-name: Weekly AI Intel
+name: Weekly NoiseFloor
 
 # Fires Mondays 13:00 UTC. Change the cron to taste; keep it weekly —
 # AI news doesn't clear a daily signal bar and reads better batched.
@@ -12,7 +12,7 @@ permissions:
   id-token: write                # claude-code-action fetches an OIDC token to authenticate
 
 concurrency:
-  group: weekly-ai-intel         # a slow run won't overlap the next scheduled one
+  group: weekly-noisefloor       # a slow run won't overlap the next scheduled one
   cancel-in-progress: false
 
 jobs:
@@ -87,8 +87,8 @@ jobs:
           # user — git refuses to touch it ("fatal: not in a git directory")
           # until the workspace is marked safe.
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          git config user.name  "ai-intel-bot"
-          git config user.email "ai-intel-bot@users.noreply.github.com"
+          git config user.name  "noisefloor-bot"
+          git config user.email "noisefloor-bot@users.noreply.github.com"
           git add content/ data/manifest.json
           if git diff --cached --quiet; then
             echo "Nothing new this week — no commit."

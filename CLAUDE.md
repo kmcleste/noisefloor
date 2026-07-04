@@ -1,4 +1,4 @@
-# AI Intel — house standards
+# NoiseFloor — house standards
 
 This repo publishes a weekly AI intelligence briefing for an engineering
 leader. You (Claude Code) are the analyst. Read this file and
