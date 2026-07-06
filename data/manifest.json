@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-06T12:18:51Z",
+  "updated": "2026-07-06T16:24:29Z",
   "entries": [
     {
       "id": "claude-sonnet-5-launch",
@@ -275,6 +275,63 @@
       "title": "Google DeepMind publishes AI Control Roadmap v0.1, treating its own agents as insider threats",
       "beat": "agents",
       "urls": ["https://deepmind.google/blog/securing-the-future-of-ai-agents/"],
+      "first_covered": "2026-07-06",
+      "last_covered": "2026-07-06",
+      "times_covered": 1
+    },
+    {
+      "id": "jadepuffer-agentic-ransomware",
+      "title": "Sysdig documents JADEPUFFER, the first ransomware operation run end-to-end by an LLM agent",
+      "beat": "agents",
+      "urls": ["https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion"],
+      "first_covered": "2026-07-06",
+      "last_covered": "2026-07-06",
+      "times_covered": 1
+    },
+    {
+      "id": "pydantic-ai-v2-llamaindex-workflows-1",
+      "title": "Pydantic AI v2 and LlamaIndex Workflows 1.0 both go stable within a day of each other",
+      "beat": "frameworks",
+      "urls": [
+        "https://pydantic.dev/articles/pydantic-ai-v2",
+        "https://www.llamaindex.ai/blog/announcing-workflows-1-0-a-lightweight-framework-for-agentic-systems"
+      ],
+      "first_covered": "2026-07-06",
+      "last_covered": "2026-07-06",
+      "times_covered": 1
+    },
+    {
+      "id": "gpt-5-6-sol-terra-luna-preview",
+      "title": "OpenAI previews GPT-5.6 Sol/Terra/Luna with limited partner access coordinated with the US government",
+      "beat": "models",
+      "urls": ["https://openai.com/index/previewing-gpt-5-6-sol/"],
+      "first_covered": "2026-07-06",
+      "last_covered": "2026-07-06",
+      "times_covered": 1
+    },
+    {
+      "id": "mistral-leanstral-1-5",
+      "title": "Mistral releases Leanstral 1.5, an Apache-2.0 formal-verification model for Lean 4 proof engineering",
+      "beat": "oss",
+      "urls": ["https://mistral.ai/news/leanstral-1-5/"],
+      "first_covered": "2026-07-06",
+      "last_covered": "2026-07-06",
+      "times_covered": 1
+    },
+    {
+      "id": "anthropic-claude-science-launch",
+      "title": "Anthropic launches Claude Science, an auditable AI workbench for researchers, in beta",
+      "beat": "enterprise",
+      "urls": ["https://www.anthropic.com/news/claude-science-ai-workbench"],
+      "first_covered": "2026-07-06",
+      "last_covered": "2026-07-06",
+      "times_covered": 1
+    },
+    {
+      "id": "voyage-context-4-release",
+      "title": "Voyage AI releases voyage-context-4, an auto-chunking contextualized embedding model",
+      "beat": "rag",
+      "urls": ["https://blog.voyageai.com/2026/06/29/voyage-context-4/"],
       "first_covered": "2026-07-06",
       "last_covered": "2026-07-06",
       "times_covered": 1
