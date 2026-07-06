@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-04T14:36:15Z",
+  "updated": "2026-07-06T12:18:51Z",
   "entries": [
     {
       "id": "claude-sonnet-5-launch",
@@ -223,6 +223,60 @@
       "urls": ["https://www.pinecone.io/blog/pinecone-nexus-public-preview/"],
       "first_covered": "2026-07-04",
       "last_covered": "2026-07-04",
+      "times_covered": 1
+    },
+    {
+      "id": "cloudflare-content-signals-crawler-billing",
+      "title": "Cloudflare starts charging AI crawlers rent for the open web",
+      "beat": "providers",
+      "urls": ["https://blog.cloudflare.com/content-independence-day-ai-options/"],
+      "first_covered": "2026-07-06",
+      "last_covered": "2026-07-06",
+      "times_covered": 1
+    },
+    {
+      "id": "microsoft-frontier-company-launch",
+      "title": "Microsoft commits $2.5B and 6,000 people to Microsoft Frontier Company",
+      "beat": "enterprise",
+      "urls": ["https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/"],
+      "first_covered": "2026-07-06",
+      "last_covered": "2026-07-06",
+      "times_covered": 1
+    },
+    {
+      "id": "eu-ai-act-digital-omnibus-delay",
+      "title": "European Parliament approves AI Act Digital Omnibus, delaying high-risk deadlines to 2027/2028",
+      "beat": "enterprise",
+      "urls": ["https://www.europarl.europa.eu/news/en/press-room/20260611IPR45207/ai-act-ep-approves-simplification-measures-and-nudifier-app-ban"],
+      "first_covered": "2026-07-06",
+      "last_covered": "2026-07-06",
+      "times_covered": 1
+    },
+    {
+      "id": "claude-microsoft-foundry-ga",
+      "title": "Claude Opus 4.8 and Haiku 4.5 become generally available in Microsoft Foundry on Azure",
+      "beat": "providers",
+      "urls": ["https://claude.com/blog/claude-in-microsoft-foundry"],
+      "first_covered": "2026-07-06",
+      "last_covered": "2026-07-06",
+      "times_covered": 1
+    },
+    {
+      "id": "mistral-ocr-4-release",
+      "title": "Mistral releases OCR 4, structured document parsing with bounding boxes and confidence scores",
+      "beat": "vision",
+      "urls": ["https://mistral.ai/news/ocr-4/"],
+      "first_covered": "2026-07-06",
+      "last_covered": "2026-07-06",
+      "times_covered": 1
+    },
+    {
+      "id": "deepmind-ai-control-roadmap",
+      "title": "Google DeepMind publishes AI Control Roadmap v0.1, treating its own agents as insider threats",
+      "beat": "agents",
+      "urls": ["https://deepmind.google/blog/securing-the-future-of-ai-agents/"],
+      "first_covered": "2026-07-06",
+      "last_covered": "2026-07-06",
       "times_covered": 1
     }
   ]
