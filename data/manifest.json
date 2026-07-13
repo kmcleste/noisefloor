@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-07-06T16:24:29Z",
+  "updated": "2026-07-13T15:44:32Z",
   "entries": [
     {
       "id": "claude-sonnet-5-launch",
@@ -302,12 +302,15 @@
     },
     {
       "id": "gpt-5-6-sol-terra-luna-preview",
-      "title": "OpenAI previews GPT-5.6 Sol/Terra/Luna with limited partner access coordinated with the US government",
+      "title": "OpenAI ships GPT-5.6 Sol/Terra/Luna to general availability after government-gated preview",
       "beat": "models",
-      "urls": ["https://openai.com/index/previewing-gpt-5-6-sol/"],
+      "urls": [
+        "https://openai.com/index/previewing-gpt-5-6-sol/",
+        "https://openai.com/index/gpt-5-6/"
+      ],
       "first_covered": "2026-07-06",
-      "last_covered": "2026-07-06",
-      "times_covered": 1
+      "last_covered": "2026-07-13",
+      "times_covered": 2
     },
     {
       "id": "mistral-leanstral-1-5",
@@ -334,6 +337,69 @@
       "urls": ["https://blog.voyageai.com/2026/06/29/voyage-context-4/"],
       "first_covered": "2026-07-06",
       "last_covered": "2026-07-06",
+      "times_covered": 1
+    },
+    {
+      "id": "xai-grok-4-5-launch",
+      "title": "xAI ships Grok 4.5, its first model trained on Cursor's developer session data",
+      "beat": "models",
+      "urls": ["https://x.ai/news/grok-4-5"],
+      "first_covered": "2026-07-13",
+      "last_covered": "2026-07-13",
+      "times_covered": 1
+    },
+    {
+      "id": "meta-muse-spark-1-1-paid-api",
+      "title": "Meta launches Muse Spark 1.1 with its first-ever paid developer API",
+      "beat": "providers",
+      "urls": ["https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"],
+      "first_covered": "2026-07-13",
+      "last_covered": "2026-07-13",
+      "times_covered": 1
+    },
+    {
+      "id": "openai-chatgpt-work-launch",
+      "title": "OpenAI launches ChatGPT Work, an agent that finishes hours-long knowledge-work projects",
+      "beat": "agents",
+      "urls": ["https://openai.com/index/chatgpt-for-your-most-ambitious-work/"],
+      "first_covered": "2026-07-13",
+      "last_covered": "2026-07-13",
+      "times_covered": 1
+    },
+    {
+      "id": "apple-openai-trade-secret-lawsuit",
+      "title": "Apple sues OpenAI, alleging its hardware chief directed a pattern of trade-secret theft",
+      "beat": "providers",
+      "urls": ["https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/"],
+      "first_covered": "2026-07-13",
+      "last_covered": "2026-07-13",
+      "times_covered": 1
+    },
+    {
+      "id": "bytedance-seedream-5-pro-launch",
+      "title": "ByteDance launches Seedream 5.0 Pro with layer separation and pixel-level editing",
+      "beat": "vision",
+      "urls": ["https://seed.bytedance.com/en/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro"],
+      "first_covered": "2026-07-13",
+      "last_covered": "2026-07-13",
+      "times_covered": 1
+    },
+    {
+      "id": "accenture-edge-google-cloud-midmarket-agentic",
+      "title": "Accenture Edge and Google Cloud bring packaged agentic AI solutions to mid-market companies",
+      "beat": "enterprise",
+      "urls": ["https://newsroom.accenture.com/news/2026/accenture-edge-and-google-cloud-bring-scalable-agentic-ai-solutions-to-mid-market-companies"],
+      "first_covered": "2026-07-13",
+      "last_covered": "2026-07-13",
+      "times_covered": 1
+    },
+    {
+      "id": "nvidia-huggingface-lerobot-isaac-groot-1-7",
+      "title": "Nvidia brings the open Isaac GR00T 1.7 robot foundation model into Hugging Face's LeRobot",
+      "beat": "oss",
+      "urls": ["https://blogs.nvidia.com/blog/hugging-face-lerobot-models-frameworks-open-robotics/"],
+      "first_covered": "2026-07-13",
+      "last_covered": "2026-07-13",
       "times_covered": 1
     }
   ]
